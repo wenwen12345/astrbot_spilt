@@ -32,7 +32,7 @@ except Exception:  # pragma: no cover
             return _decorator
 
 
-_SENTENCE_DELIMS = set("。！？!?；;，,、")
+_SENTENCE_DELIMS = set("")
 _SEPARATOR = "\n\n"
 
 
