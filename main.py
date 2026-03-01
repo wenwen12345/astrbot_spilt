@@ -82,8 +82,8 @@ def _split_chain(chain: Sequence[Any], separator: str) -> tuple[List[Any], bool]
 
 
 class Main:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, context: Any = None, **_: Any) -> None:
+        self.context = context
 
     def run(self, ame: AstrMessageEvent):
         message_str = (getattr(ame, "message_str", "") or "").strip()
